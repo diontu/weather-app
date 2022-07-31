@@ -1,0 +1,68 @@
+@import url(//db.onlinewebfonts.com/c/8110292c6a650477e55707a59b8f37bc?family=Teko+Regular);
+
+.weather-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  min-height: 625px;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px 5px rgba(78, 78, 78, 0.144);
+  background-color: white;
+}
+.today-weather-card {
+  text-align: center;
+  font-size: 36px;
+  grid-row: 1 / span 4;
+  grid-column: 1 / span 4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ecf4fb;
+}
+.today-title {
+  margin-top: 50px;
+}
+.today-weather {
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  margin: 30px;
+}
+.weather-desc {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  min-width: 80px;
+  min-height: 180px;
+}
+.weather-desc-degrees {
+  font-family: 'Teko Regular', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 120px;
+  font-weight: 500;
+  grid-row: 1 / span 2;
+  overflow: auto;
+  color: rgb(50, 50, 50);
+  padding: 0 30px;
+}
+.weather-desc-weather {
+  grid-row: 3;
+}
+.future-weather-card {
+  display: grid;
+  font-size: 30px;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  grid-row: 5 / span 3;
+  background-color: #ecf4fb;
+}
+.future-weather-card:nth-child(2) {
+  border-bottom-left-radius: 10px;
+}
+.future-weather-card:nth-child(5) {
+  border-bottom-right-radius: 10px;
+}
+.future-weather-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
