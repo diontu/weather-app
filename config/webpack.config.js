@@ -5,8 +5,6 @@ require('dotenv').config({
 });
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-console.log(path.resolve(__dirname, '../environment/.env'));
-
 const devServer = {
   static: {
     publicPath: '../public/index.html',
