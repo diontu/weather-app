@@ -66,3 +66,9 @@
   justify-content: center;
   align-items: center;
 }
+.weather-degrees {
+  font-family: 'Teko Regular', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  color: rgb(50, 50, 50);
+}
