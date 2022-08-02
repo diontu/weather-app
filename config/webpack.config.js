@@ -7,8 +7,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const devServer = {
   static: {
-    publicPath: '../public/index.html',
-    directory: path.resolve(__dirname, '../public'),
+    publicPath: '../dist/index.html',
+    directory: path.resolve(__dirname, '../dist'),
   },
   historyApiFallback: true,
   hot: true,
@@ -20,7 +20,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../public'),
+    path: path.resolve(__dirname, '../dist'),
     clean: true,
   },
   devtool: 'inline-source-map',

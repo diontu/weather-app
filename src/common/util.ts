@@ -5,6 +5,11 @@ export const convertKelvinToCelcius = (kelvin: number): number => {
   return Math.round(kelvin - ABSOLUTE_ZERO_KELVIN_TEMP);
 };
 
+/**
+ * 
+ * @param weatherInfo 
+ * @returns Array with 2 index - [0] gives the date, [1] gives the time.
+ */
 export const getDateAndTimeFromResponse = (weatherInfo: WeatherInfo): string[] => {
   return weatherInfo.dt_txt.split(' ');
 };
@@ -35,6 +40,6 @@ export const getDayOfTheWeek = (day: number): DayOfTheWeek => {
     case 6:
       return 'Sat';
     default:
-      throw new Error('Not a number 1-6.');
+      throw Error('Not a number 1-6.');
   }
 };
